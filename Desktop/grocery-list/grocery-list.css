@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.column {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.grocery-card {
+    padding: 10px;
+    border-right: 4px solid #e17055;
+    border-bottom: 4px solid #e17055;
+    height: 100%;
+    position: relative;
+    background-color: #fff4d5;
+    color: #2c3a47;
+    box-sizing: border-box;
+}
+
+.grocery-card-header {
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+    padding-top: 40px;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+.grocery-card-content,
+.accent-text {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.grocery-card-content {
+    line-height: 150%;
+    padding-bottom: 40px;
+    padding-top: 4px;
+}
+
+.accent-text {
+    font-weight: bold;
+    color: #e17055;
+}
+
+.category-text {
+    position: absolute;
+    bottom: 10px;
+}
+
+.float-right {
+    float: right;
+}
+
+@media screen and (min-width: 768px) {
+    .column {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .grocery-card {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .grocery-list-page {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .grocery-list-page {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .grocery-list-page {
+        width: 980px;
+        margin: 0 auto;
+    }
+}
